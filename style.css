@@ -12,15 +12,17 @@ a:hover {
 body, html {
 	background-color: black;
 	color: white;
-	font: bold 50px Ariel, sans-serif;
+	font: Ariel, sans-serif;
+	font-weight: bold;
 	margin: 0;
 	user-select: none;
 }
 
 
 .container {
+	font-size: 50px;
+	font-weight: bold;
 	height: 100%;
-	text-align: center;
 	width: 100%;
 }
 
@@ -30,6 +32,30 @@ body, html {
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+#menu {
+	display: none;
+	right: 5%;
+}
+
+#navi {
+	font-size: 30px;
+	font-weight: bold;
+	position: absolute;
+	right: 3%;
+	opacity: 70%;
+}
+
+#navi:hover {
+	cursor: pointer;
+	opacity: 100%;
+}
+
+#home-title {
+	/*position: absolute;*/
+	/*right: 1%;*/
+	/*text-align: right;*/
 }
 
 
