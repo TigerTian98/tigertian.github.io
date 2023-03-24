@@ -1,0 +1,63 @@
+/*a:link, a:visited {
+	color: white;
+	font-weight: bold;
+	text-shadow: 0 0 2px black;
+}
+
+a:hover {
+	color: black;
+	text-shadow: none;
+}
+*/
+body, html {
+	background-color: black;
+	color: white;
+	font: bold 50px Ariel, sans-serif;
+	margin: 0;
+	user-select: none;
+}
+
+
+.container {
+	height: 100%;
+	text-align: center;
+	width: 100%;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+/*
+.link {
+	line-height: 100px;
+	position: relative;
+	text-align: center;
+	top: -110px;
+	width: 100%;
+}
+
+#button_container {
+	height: 50px;
+}
+
+#drawings {
+	display: none;
+}
+
+#music {
+	display: none;
+}
+
+#physical {
+	display: none;
+}
+
+#web_pages {
+	display: block;
+}*/
