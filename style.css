@@ -24,6 +24,7 @@ body, html {
 	font-size: 10vw;
 	font-weight: bold;
 	height: 100%;
+	overflow: hidden;
 	width: 100%;
 }
 
@@ -67,6 +68,8 @@ body, html {
 #menu {
 	display: none;
 	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: hidden;
 	right: 0;
 	user-select: none;
 }
@@ -76,6 +79,7 @@ body, html {
 	border-radius: 50%;
 	height: 150vw;
 	opacity: 95%;
+	overflow: hidden;
 	overflow-x: hidden;
 	overflow-y: hidden;
 	position: absolute;
@@ -84,6 +88,7 @@ body, html {
 }
 
 #menuBox {
+	overflow-x: hidden;
 	overflow-y: scroll;
 	position: absolute;
 	right: 5%;
