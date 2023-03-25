@@ -12,7 +12,7 @@ a:hover {
 body, html {
 	background-color: black;
 	color: white;
-	font-family: Helvetica;
+	font-family: Arial;
 	font-weight: bold;
 	margin: 0;
 	overflow: hidden;
@@ -21,7 +21,7 @@ body, html {
 
 
 .container {
-	font-size: 50px;
+	font-size: 10vw;
 	font-weight: bold;
 	height: 100%;
 	width: 100%;
@@ -37,7 +37,8 @@ body, html {
 
 .button {
 	color: white;
-	font-size: 30px;
+	font-family: ;
+	font-size: 7vmin;
 	font-weight: bold;
 	opacity: 70%;
 }
@@ -47,66 +48,46 @@ body, html {
 	opacity: 100%;
 }
 
+.menuText {
+	color: white;
+	font-family: Gill Sans;
+	font-size: 6vmin;
+	height: 6vmin;
+}
+
 #bgpic {
 	bottom: 0;
-	height: 600px;
-	left: -5%;
-	position: fixed;
-	width: 600px;
+	height: 100vh;
+	left: -5vh;
+	position: sticky;
+	width: 100vh;
 }
 
 #menu {
-	/*position: absolute;*/
 	display: none;
-	right: 5%;
+	right: 0;
 }
 
 #menuBg {
-	background-color: darkblue;
+	background-color: #202020;
 	border-radius: 50%;
-	height: 600px;
+	height: 150vw;
+	opacity: 95%;
 	position: absolute;
-	right: -300px;
-	width: 600px;
+	right: -60vw;
+	width: 150vw;
 }
 
 #menuBox {
 	position: absolute;
+	text-align: right;
 	right: 5%;
-	top: 50%;
+	width: 70vw;
 }
 
 #menuButton {
+	font-size: 10vmin;
 	position: absolute;
-	right: 20px;
-	top: 20px;
+	right: 3vmin;
+	top: 3vmin;
 }
-
-/*
-.link {
-	line-height: 100px;
-	position: relative;
-	text-align: center;
-	top: -110px;
-	width: 100%;
-}
-
-#button_container {
-	height: 50px;
-}
-
-#drawings {
-	display: none;
-}
-
-#music {
-	display: none;
-}
-
-#physical {
-	display: none;
-}
-
-#web_pages {
-	display: block;
-}*/
