@@ -31,7 +31,7 @@ body, html {
 .menuText {
 	color: white;
 	font-family: Gill Sans;
-	font-size: min(40px, 7vmin);
+	font-size: min(32px, 7vmin);
 	font-weight: bold;
 }
 
@@ -69,6 +69,7 @@ body, html {
 
 #menuBg {
 	background-color: #202020;
+	backdrop-filter: blur(3px);
 	border-radius: 50%;
 	height: 200vmax;
 	opacity: 95%;
