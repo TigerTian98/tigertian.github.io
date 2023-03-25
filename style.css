@@ -9,20 +9,6 @@ body, html {
 	user-select: none;
 }
 
-.container {
-	height: 100%;
-	overflow: hidden;
-	width: 100%;
-}
-
-.vertical-center {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
 .button {
 	color: white;
 	font-family: Arial;
@@ -36,11 +22,25 @@ body, html {
 	opacity: 100%;
 }
 
+.container {
+	height: 100%;
+	overflow: hidden;
+	width: 100%;
+}
+
 .menuText {
 	color: white;
 	font-family: Gill Sans;
 	font-size: min(40px, 7vmin);
 	font-weight: bold;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 #bgpic {
@@ -70,16 +70,16 @@ body, html {
 #menuBg {
 	background-color: #202020;
 	border-radius: 50%;
-	height: 150vw;
+	height: 200vmax;
 	opacity: 95%;
 	position: absolute;
-	right: -60vw;
-	width: 150vw;
+	right: calc(25vw - 165vmax);
+	width: 200vmax;
 }
 
 #menuBox {
 	/*height: fit-content;*/
-	max-height: min(120vw, 80vh);
+	max-height: 95vh;
 	overflow-y: scroll;
 	/*padding-bottom: 30vh;*/
 	padding-right: 2%;
