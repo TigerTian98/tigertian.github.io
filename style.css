@@ -76,6 +76,7 @@ body, html {
 	border-radius: 50%;
 	height: 150vw;
 	opacity: 95%;
+	overflow: hidden;
 	position: absolute;
 	right: -60vw;
 	width: 150vw;
