@@ -10,8 +10,6 @@ body, html {
 }
 
 .container {
-	font-size: 10vw;
-	font-weight: bold;
 	height: 100%;
 	overflow: hidden;
 	width: 100%;
@@ -47,15 +45,20 @@ body, html {
 }
 
 #bgpic {
-	bottom: 0vmin;
+	bottom: 0;
 	height: 100vh;
-	left: min(0, calc(100vw - 100vh));
-	position: absolute;
-	width: 100vh;
+	left: 0;
+	position: fixed;
+	width: 50vh;
 }
 
 #header {
-	left: 2vmin;
+	font-family: Gill Sans;
+	font-size: 10vw;
+	font-weight: bold;
+	left: 10vw;
+	text-align: center;
+	width: 80vw;
 }
 
 #menu {
