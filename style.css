@@ -38,7 +38,7 @@ body, html {
 .button {
 	color: white;
 	font-family: Arial;
-	font-size: 7vmin;
+	font-size: 5.5vmin;
 	font-weight: normal;
 	opacity: 70%;
 }
@@ -66,7 +66,9 @@ body, html {
 
 #menu {
 	display: none;
+	overflow: hidden;
 	right: 0;
+	user-select: none;
 }
 
 #menuBg {
@@ -87,7 +89,7 @@ body, html {
 }
 
 #menuButton {
-	font-size: 10vmin;
+	font-size: 11vmin;
 	font-weight: bold;
 	position: absolute;
 	right: 3vmin;
