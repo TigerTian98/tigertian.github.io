@@ -76,16 +76,18 @@ body, html {
 	border-radius: 50%;
 	height: 150vw;
 	opacity: 95%;
-	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: hidden;
 	position: absolute;
 	right: -60vw;
 	width: 150vw;
 }
 
 #menuBox {
+	overflow-y: scroll;
 	position: absolute;
-	text-align: right;
 	right: 5%;
+	text-align: right;
 	width: 70vw;
 }
 
