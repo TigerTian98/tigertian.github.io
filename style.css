@@ -12,9 +12,10 @@ a:hover {
 body, html {
 	background-color: black;
 	color: white;
-	font: Ariel, sans-serif;
+	font-family: Ariel;
 	font-weight: bold;
 	margin: 0;
+	overflow: hidden;
 	user-select: none;
 }
 
@@ -34,30 +35,44 @@ body, html {
   transform: translateY(-50%);
 }
 
-#menu {
-	display: none;
-	right: 5%;
-}
-
-#navi {
+.button {
+	color: white;
 	font-size: 30px;
 	font-weight: bold;
-	position: absolute;
-	right: 3%;
 	opacity: 70%;
 }
 
-#navi:hover {
+.button:hover {
 	cursor: pointer;
 	opacity: 100%;
 }
 
-#home-title {
+#menu {
 	/*position: absolute;*/
-	/*right: 1%;*/
-	/*text-align: right;*/
+	display: none;
+	right: 5%;
 }
 
+#menuBg {
+	background-color: darkblue;
+	border-radius: 50%;
+	height: 600px;
+	position: absolute;
+	right: -300px;
+	width: 600px;
+}
+
+#menuBox {
+	position: absolute;
+	right: 5%;
+	top: 50%;
+}
+
+#menuButton {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
 
 /*
 .link {
