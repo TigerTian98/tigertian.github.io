@@ -16,6 +16,7 @@ body, html {
 	font-weight: bold;
 	margin: 0;
 	overflow: hidden;
+	touch-action: none;
 	user-select: none;
 }
 
@@ -93,6 +94,7 @@ body, html {
 	position: absolute;
 	right: 5%;
 	text-align: right;
+	touch-action: pan-y;
 	width: 70vw;
 }
 
