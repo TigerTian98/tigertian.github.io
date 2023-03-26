@@ -1,6 +1,14 @@
 let menuBool = false;
 
-function menuToggle(){
+function closeMenu() {
+	if (menuBool) {
+		document.getElementById('menu').style.display = "none";
+		document.getElementById('menuButton').textContent = "≡";
+		menuBool = false;
+	}
+}
+
+function menuToggle() {
 	if (menuBool) {
 		document.getElementById('menu').style.display = "none";
 		document.getElementById('menuButton').textContent = "≡";

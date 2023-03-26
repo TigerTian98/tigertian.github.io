@@ -12,7 +12,7 @@ body, html {
 .button {
 	color: white;
 	font-family: Arial;
-	font-size: min(24px, 6vmin);
+	font-size: min(24px, 4vmin);
 	font-weight: normal;
 	opacity: 70%;
 }
@@ -31,7 +31,7 @@ body, html {
 .menuText {
 	color: white;
 	font-family: Gill Sans;
-	font-size: min(32px, 7vmin);
+	font-size: min(32px, 5vmin);
 	font-weight: bold;
 }
 
