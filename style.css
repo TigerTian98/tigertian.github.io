@@ -128,22 +128,22 @@ body, html {
 
 @keyframes menuOnBg {
 	0% {
-		background-color: #101010;
+		/*background-color: #101010;*/
 		right: -200vmax;
 	}
 	100% {
-		background-color: #202020;
+		/*background-color: #202020;*/
 		right: calc(25vw - 165vmax);
 	}
 }
 
 @keyframes menuOffBg {
 	0% {
-		background-color: #202020;
+		/*background-color: #202020;*/
 		right: calc(25vw - 165vmax);
 	}
 	100% {
-		background-color: #000000;
+		/*background-color: #000000;*/
 		right: -200vmax;
 	}
 }
