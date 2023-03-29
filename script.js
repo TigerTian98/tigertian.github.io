@@ -1,20 +1,31 @@
 let menuBool = false;
 
-function closeMenu() {
+function menuClose() {
 	if (menuBool) {
-		document.getElementById('menu').style.display = "none";
-		document.getElementById('menuButton').textContent = "≡";
-		menuBool = false;
+		menuOff();
 	}
+}
+
+function menuOff() {
+	document.getElementById('menuButton').textContent = "≡";
+	document.getElementById('menuBg').style.animation = "menuOffBg 0.5s ease 0s 1 normal both";
+	document.getElementById('menuBox').style.animation = "menuOffText 0.5s ease 0s 1 normal both";
+	document.getElementById('menuBtmShadow').style.animation = "menuOffShadow 1s ease 0s 1 normal both";
+	menuBool = false;
+}
+
+function menuOn() {
+	document.getElementById('menuButton').textContent = "×";
+	document.getElementById('menuBg').style.animation = "menuOnBg 1s ease 0s 1 normal both";
+	document.getElementById('menuBox').style.animation = "menuOnText 1.5s ease 0s 1 normal both";
+	document.getElementById('menuBtmShadow').style.animation = "menuOnShadow 1s ease 0s 1 normal both";
+	menuBool = true;
 }
 
 function menuToggle() {
 	if (menuBool) {
-		document.getElementById('menu').style.display = "none";
-		document.getElementById('menuButton').textContent = "≡";
+		menuOff();
 	} else {
-		document.getElementById('menu').style.display = "block";
-		document.getElementById('menuButton').textContent = "×";
+		menuOn();
 	}
-	menuBool = !menuBool;
 }
