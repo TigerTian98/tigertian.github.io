@@ -29,3 +29,7 @@ function menuToggle() {
 		menuOn();
 	}
 }
+
+function titleAppear() {
+	document.getElementById('header').style.animation = "openingTitle 5s ease 0s 1 normal both";	
+}
