@@ -126,7 +126,7 @@ body, html {
 	background: rgba(255, 255, 255, 0.3);
 }
 
-@keyframes menuOnBg {
+@-webkit-keyframes menuOnBg {
 	0% {
 		/*background-color: #101010;*/
 		right: -200vmax;
@@ -137,7 +137,7 @@ body, html {
 	}
 }
 
-@keyframes menuOffBg {
+@-webkit-keyframes menuOffBg {
 	0% {
 		/*background-color: #202020;*/
 		right: calc(25vw - 165vmax);
@@ -148,7 +148,7 @@ body, html {
 	}
 }
 
-@keyframes menuOnShadow {
+@-webkit-keyframes menuOnShadow {
 	0% {
 		bottom: -200vh;
 	}
@@ -157,7 +157,7 @@ body, html {
 	}
 }
 
-@keyframes menuOffShadow {
+@-webkit-keyframes menuOffShadow {
 	0% {
 		bottom: -5vh;
 	}
@@ -166,7 +166,7 @@ body, html {
 	}
 }
 
-@keyframes menuOnText {
+@-webkit-keyframes menuOnText {
 	0% {
 		right: -70vw;
 	}
@@ -175,7 +175,7 @@ body, html {
 	}
 }
 
-@keyframes menuOffText {
+@-webkit-keyframes menuOffText {
 	0% {
 		right: 8%;
 	}
