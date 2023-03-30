@@ -9,8 +9,38 @@ body, html {
 	user-select: none;
 }
 
+.button {
+	color: white;
+	font-family: Arial;
+	font-size: min(24px, 4vmin);
+	font-weight: normal;
+	opacity: 70%;
+}
+
+.button:hover {
+	cursor: pointer;
+	opacity: 100%;
+}
+
 .frame {
-	width: 100%;
+	width: min(100%, 400px);
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#bgpic {
+	bottom: 0;
+	height: 100vh;
+	left: 0;
+	opacity: 50%;
+	position: fixed;
+	width: 50vh;
 }
 
 #bottomShadow {
@@ -27,12 +57,29 @@ body, html {
 #container {
 	align-content: center;
 	height: 90vh;
-	left: 5vw;
+	left: 10vw;
 	overflow-y: scroll;
 	position: absolute;
+	text-align: center;
 	top: 10vh;
 	touch-action: pan-y;
-	width: 90vw;
+	width: 80vw;
+}
+
+#menuBg {
+	background-color: #202020;
+	/*backdrop-filter: blur(3px);*/
+	border-radius: 50%;
+	font-size: 11vmin;
+	height: 15vmin;
+	left: calc(50vw - 7.5vmin);
+	opacity: 95%;
+	overflow: hidden;
+	position: absolute;
+	text-align: center;
+	text-decoration: none;
+	top: calc(10vh - 7.5vmin);
+	width: 15vmin;
 }
 
 ::-webkit-scrollbar {
