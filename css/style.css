@@ -47,6 +47,7 @@ body, html {
 	bottom: 0;
 	height: 100vh;
 	left: 0;
+	opacity: 50%;
 	position: fixed;
 	width: 50vh;
 }
@@ -126,6 +127,15 @@ body, html {
 
 ::-webkit-scrollbar-thumb:hover {
 	background: rgba(255, 255, 255, 0.3);
+}
+
+@keyframes lightUp {
+	0% {
+		opacity: 50%;
+	}
+	100% {
+		opacity: 100%;
+	}
 }
 
 @keyframes menuOnBg {

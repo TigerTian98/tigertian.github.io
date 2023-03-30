@@ -30,6 +30,7 @@ function menuToggle() {
 	}
 }
 
-function titleAppear() {
+function onOpen() {
 	document.getElementById('header').style.animation = "openingTitle 1.2s ease 0s 1 normal both";	
+	document.getElementById('bgpic').style.animation = "lightUp 0.5s ease 0s 1 normal both";	
 }

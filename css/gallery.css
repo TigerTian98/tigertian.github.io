@@ -38,7 +38,7 @@ body, html {
 	bottom: 0;
 	height: 100vh;
 	left: 0;
-	opacity: 50%;
+	opacity: 100%;
 	position: fixed;
 	width: 50vh;
 }
@@ -66,20 +66,21 @@ body, html {
 	width: 80vw;
 }
 
-#menuBg {
+#homeButton {
 	background-color: #202020;
 	/*backdrop-filter: blur(3px);*/
 	border-radius: 50%;
-	font-size: 11vmin;
-	height: 15vmin;
-	left: calc(50vw - 7.5vmin);
+	font-size: 30px;
+	height: 45px;
+	left: calc(50vw - 22.5px);
+	line-height: 40px;
 	opacity: 95%;
 	overflow: hidden;
 	position: absolute;
 	text-align: center;
 	text-decoration: none;
-	top: calc(10vh - 7.5vmin);
-	width: 15vmin;
+	top: calc(10vh - 22.5px);
+	width: 45px;
 }
 
 ::-webkit-scrollbar {
@@ -93,4 +94,13 @@ body, html {
 
 ::-webkit-scrollbar-thumb:hover {
 	background: rgba(255, 255, 255, 0.3);
+}
+
+@keyframes dim {
+	0% {
+		opacity: 100%;
+	}
+	100% {
+		opacity: 50%;
+	}
 }
