@@ -1,0 +1,49 @@
+body, html {
+	background-color: black;
+	color: white;
+	font-family: Arial;
+	font-weight: bold;
+	margin: 0;
+	overflow: hidden;
+	touch-action: none;
+	user-select: none;
+}
+
+.frame {
+	width: 100%;
+}
+
+#bottomShadow {
+	background-color: black;
+	box-shadow: 0 0 50px 30px black;
+	border-radius: 30%;
+	bottom: -5vh;
+	height: 5vh;
+	position: fixed;
+	left: 0vw;
+	width: 100vw;
+}
+
+#container {
+	align-content: center;
+	height: 90vh;
+	left: 5vw;
+	overflow-y: scroll;
+	position: absolute;
+	top: 10vh;
+	touch-action: pan-y;
+	width: 90vw;
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: transparent;
+	border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(255, 255, 255, 0.3);
+}

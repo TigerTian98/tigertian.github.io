@@ -3,13 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>HOME丨TTN</title>
-	<link rel="icon" type="image/x-icon" href="logo.ico">
+	<link rel="icon" type="image/x-icon" href="img/logo.ico">
 </head>
 <body onload ="titleAppear()">
-	<div class="container" onclick="menuClose()">
-		<img id="bgpic" src="profile.png">
+	<div class="container">
+		<img id="bgpic" src="img/profile.png" onclick="menuClose()">
 		<div class="vertical-center" id="header">
 			TIGER TIAN
 		</div>
@@ -18,7 +18,6 @@
 		<div class="vertical-center" id="menuBg"></div>
 		<div class="vertical-center" id="menuBox">
 			<p class="menuText">PROJECTS</p>
-			<br>
 			<a class="button" target="_blank" href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzIyMjM5NTEzNA==&action=getalbum&album_id=1958349354918805505">Album Reviews</a>
 			<br>
 			<a class="button" target="_blank" href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzIyMjM5NTEzNA==&action=getalbum&album_id=1958507433387950081">Annual Editorial Lists</a>
@@ -27,12 +26,14 @@
 			<br>
 			<a class="button" target="_blank" href="https://docs.google.com/spreadsheets/d/1_H_luDdARoezzwp5NeH-qeYyu52Yhc1blCBmX5ic07E/edit?usp=sharing">Personal Music Archive</a>
 			<br>
+			<br>
 			<p class="menuText">COLLECTION</p>
+			<a class="button" target="_blank" href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3ODY2MTc2MTc4NDIyNDQw?igshid=YmMyMTA2M2Y=">Physical Music</a><!-- 
 			<br>
-			<a class="button" target="_blank" href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3ODY2MTc2MTc4NDIyNDQw?igshid=YmMyMTA2M2Y=">Physical Music</a>
+			<a class="button" href="gallery.html">Gallery View</a> -->
 			<br>
-			<p class="menuText">CONTACT INFO</p>
 			<br>
+			<p class="menuText">CONTACT</p>
 			<a class="button" target="_blank" href="mailto:tigertian@nyu.edu">tigertian@nyu.edu</a>
 			<br>
 			<a class="button" target="_blank" href="https://www.instagram.com/tigertian98">Instagram</a>
@@ -46,5 +47,5 @@
 	</div>
 	<div class="button" id="menuButton" onclick="menuToggle()">≡</div>
 </body>
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 </html>
