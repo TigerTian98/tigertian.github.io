@@ -67,34 +67,22 @@ body, html {
 }
 
 #homeButton {
-	background-color: #202020;
-	/*backdrop-filter: blur(3px);*/
 	border-radius: 50%;
-	font-size: 30px;
 	height: 45px;
 	left: calc(50vw - 22.5px);
-	line-height: 40px;
-	opacity: 95%;
-	overflow: hidden;
 	position: absolute;
-	text-align: center;
-	text-decoration: none;
-	top: calc(10vh - 22.5px);
+	top: -50px;
 	width: 45px;
 }
 
-::-webkit-scrollbar {
-	width: 0px;
+#icon {
+	animation: spin 1.8s linear 0s infinite normal both;
+	width: 100%;
 }
 
-::-webkit-scrollbar-thumb {
-	background: transparent;
-	border-radius: 2px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-	background: rgba(255, 255, 255, 0.3);
-}
+::-webkit-scrollbar {width: 0px;}
+::-webkit-scrollbar-thumb {background: transparent;border-radius: 2px;}
+::-webkit-scrollbar-thumb:hover {background: rgba(255, 255, 255, 0.3);}
 
 @keyframes dim {
 	0% {
@@ -102,5 +90,23 @@ body, html {
 	}
 	100% {
 		opacity: 50%;
+	}
+}
+
+@keyframes homeButtonDrop {
+	0% {
+		top: -50px;
+	}
+	100% {
+		top: calc(10vh - 22.5px);
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
 	}
 }
