@@ -139,7 +139,7 @@ body, html {
 		top: calc(10vh - 22.5px);
 	}
 	100% {
-		top: 80vh;
+		top: min(75vh, 100vh - 70px);
 	}
 }
 
