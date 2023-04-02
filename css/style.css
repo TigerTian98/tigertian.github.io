@@ -22,10 +22,8 @@ body, html {
 	opacity: 100%;
 }
 
-.container {
-	height: 100%;
-	overflow: hidden;
-	width: 100%;
+.inTextLink {
+	color: white;
 }
 
 .menuText {
@@ -52,6 +50,55 @@ body, html {
 	width: 50vh;
 }
 
+#bio {
+	/*background-color: red;*/
+	height: 100vh;
+	overflow: hidden;
+	position: absolute;
+	bottom: -100vh;
+	width: 100vw;
+}
+
+#bioBg {
+	background-color: #202020;
+	border-radius: 50%;
+	height: 200vmax;
+	left: calc(50vw - 100vmax);
+	opacity: 95%;
+	overflow: hidden;
+	position: absolute;
+	top: 10vh;
+	width: 200vmax;
+}
+
+#bioBox {
+	border-top-left-radius: 10%;
+	border-top-right-radius: 10%;
+	font-family: Verdana;
+	font-size: min(18px, 3vmin);
+	font-weight: normal;
+	left: 10vw;
+	line-height: min(40px, 7vmin);
+	max-height: 70vh;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	position: absolute;
+	touch-action: pan-y;
+	top: 30vh;
+	width: 80vw;
+}
+
+#bioShadow {
+	background-color: black;
+	box-shadow: 0 0 50px 30px black;
+	border-radius: 30%;
+	bottom: -5vh;
+	height: 5vh;
+	position: absolute;
+	left: 0vw;
+	width: 100vw;
+}
+
 #header {
 	color: white;
 	font-family: Gill Sans;
@@ -65,32 +112,30 @@ body, html {
 
 #homeButton {
 	border-radius: 50%;
-	height: 45px;
-	left: calc(50vw - 22.5px);
+	height: 50px;
+	left: calc(50vw - 25px);
 	position: absolute;
-	top: calc(10vh - 22.5px);
-	width: 45px;
+	top: calc(10vh - 25px);
+	width: 50px;
+}
+
+#homeButton:hover {
+	cursor: pointer;
 }
 
 #icon {
 	animation: spin 1.8s linear 0s infinite normal both;
+	position: absolute;
 	width: 100%;
 }
 
-#menu {
-/*	display: block;*/
-	height: 100vh;
-	left: 0;
-	overflow: hidden;
+#icon-static {
 	position: absolute;
-	top: 0;
-	width: 100vw;
-	user-select: none;
+	width: 100%;
 }
 
 #menuBg {
 	background-color: #202020;
-	/*backdrop-filter: blur(3px);*/
 	border-radius: 50%;
 	height: 200vmax;
 	opacity: 95%;
@@ -134,109 +179,73 @@ body, html {
 ::-webkit-scrollbar-thumb {background: transparent;border-radius: 2px;}
 ::-webkit-scrollbar-thumb:hover {background: rgba(255, 255, 255, 0.3);}
 
+@keyframes bioOff {
+	0% {bottom: 0;}
+	100% {bottom: -100vh;}
+}
+
+@keyframes bioOn {
+	0% {bottom: -100vh;}
+	100% {bottom: 0;}
+}
+
+@keyframes bioOffHB {
+	0% {top: calc(18vh - 25px);}
+	100% {top: min(75vh, 100vh - 70px);}
+}
+
+@keyframes bioOnHB {
+	0% {top: min(75vh, 100vh - 70px);}
+	100% {top: calc(18vh - 25px);}
+}
+
 @keyframes homeButtonDrop {
-	0% {
-		top: calc(10vh - 22.5px);
-	}
-	100% {
-		top: min(75vh, 100vh - 70px);
-	}
+	0% {top: calc(10vh - 25px);}
+	100% {top: min(75vh, 100vh - 70px);}
 }
 
 @keyframes lightUp {
-	0% {
-		opacity: 50%;
-	}
-	100% {
-		opacity: 100%;
-	}
+	0% {opacity: 50%;}
+	100% {opacity: 100%;}
 }
 
 @keyframes menuOnBg {
-	0% {
-		/*background-color: #101010;*/
-		right: -200vmax;
-	}
-	100% {
-		/*background-color: #202020;*/
-		right: calc(25vw - 165vmax);
-	}
+	0% {right: -200vmax;}
+	100% {right: calc(25vw - 165vmax);}
 }
 
 @keyframes menuOffBg {
-	0% {
-		/*background-color: #202020;*/
-		right: calc(25vw - 165vmax);
-	}
-	100% {
-		/*background-color: #000000;*/
-		right: -200vmax;
-	}
+	0% {right: calc(25vw - 165vmax);}
+	100% {right: -200vmax;}
 }
 
 @keyframes menuOnShadow {
-	0% {
-		bottom: -200vh;
-	}
-	100% {
-		bottom: -5vh;
-	}
+	0% {bottom: -200vh;}
+	100% {bottom: -5vh;}
 }
 
 @keyframes menuOffShadow {
-	0% {
-		bottom: -5vh;
-	}
-	100% {
-		bottom: -200vh;
-	}
+	0% {bottom: -5vh;}
+	100% {bottom: -200vh;}
 }
 
 @keyframes menuOnText {
-	0% {
-		right: -70vw;
-	}
-	100% {
-		right: 8%;
-	}
+	0% {right: -70vw;}
+	100% {right: 8%;}
 }
 
 @keyframes menuOffText {
-	0% {
-		right: 8%;
-	}
-	100% {
-		right: -70vw;
-	}
+	0% {right: 8%;}
+	100% {right: -70vw;}
 }
 
 @keyframes openingTitle {
-	0% {
-		opacity: 0;
-	}
-	90% {
-		color: white;
-		opacity: 0;
-	}
-
-/*	70% {color: red;}
-	75% {color: orange;}
-	80% {color: yellow;}
-	85% {color: green;}
-	90% {color: blue;}
-	95% {color: purple;}*/
-
-	100% {
-		color: white;
-		opacity: 100%;
-	}
+	0% {opacity: 0;}
+	90% {opacity: 0;}
+	100% {opacity: 100%;}
 }
 
 @keyframes spin {
-	0% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(360deg);
-	}
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
 }

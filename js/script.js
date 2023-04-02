@@ -1,4 +1,25 @@
+let bioBool = false;
 let menuBool = false;
+
+function bioOff() {
+	document.getElementById('bio').style.animation = "bioOff 0.5s ease 0s 1 normal both";
+	document.getElementById('homeButton').style.animation = "bioOffHB 1.5s ease 0s 1 normal both";
+	bioBool = false;
+}
+
+function bioOn() {
+	document.getElementById('bio').style.animation = "bioOn 1.5s ease 0s 1 normal both";
+	document.getElementById('homeButton').style.animation = "bioOnHB 1.5s ease 0s 1 normal both";
+	bioBool = true;
+}
+
+function bioToggle() {
+	if (bioBool) {
+		bioOff();
+	} else {
+		bioOn();
+	}
+}
 
 function menuClose() {
 	if (menuBool) {
@@ -15,6 +36,10 @@ function menuOff() {
 }
 
 function menuOn() {
+	if(bioBool){
+		bioOff();
+	}
+	
 	document.getElementById('menuButton').textContent = "×";
 	document.getElementById('menuBg').style.animation = "menuOnBg 1s ease 0s 1 normal both";
 	document.getElementById('menuBox').style.animation = "menuOnText 1.5s ease 0s 1 normal both";
