@@ -75,8 +75,8 @@ body, html {
 	border-top-left-radius: 10%;
 	border-top-right-radius: 10%;
 	bottom: 0;
-	box-shadow: 0 0 10px #101010 inset;
-	font-family: Verdana;
+	/*box-shadow: 0 0 10px #101010 inset;*/
+	font-family: Arial;
 	font-size: min(24px, 4vmin);
 	font-weight: normal;
 	left: calc(15vw - 4%);
