@@ -201,13 +201,13 @@ body, html {
 }
 
 @keyframes bioOffHB {
-	0% {top: max(30px, 10vh);}
+	0% {top: 30px;}
 	100% {top: min(75vh, 100vh - 70px);}
 }
 
 @keyframes bioOnHB {
 	0% {top: min(75vh, 100vh - 70px);}
-	100% {top: max(30px, 10vh);}
+	100% {top: 30px;}
 }
 
 @keyframes homeButtonDrop {
