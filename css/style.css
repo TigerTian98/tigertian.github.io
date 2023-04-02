@@ -79,7 +79,7 @@ body, html {
 	border-top-left-radius: 10%;
 	border-top-right-radius: 10%;
 	bottom: 0;
-	font-family: Candara;
+	font-family: Candara, Optima, serif;
 	font-size: min(24px, 4vmin);
 	font-weight: normal;
 	left: calc(15vw - 4%);
