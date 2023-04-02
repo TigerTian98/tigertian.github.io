@@ -21,10 +21,9 @@ function bioToggle() {
 	}
 }
 
-function menuClose() {
-	if (menuBool) {
-		menuOff();
-	}
+function closeTabs() {
+	if (bioBool) {bioOff();}
+	if (menuBool) {menuOff();}
 }
 
 function menuOff() {
@@ -39,7 +38,7 @@ function menuOn() {
 	if(bioBool){
 		bioOff();
 	}
-	
+
 	document.getElementById('menuButton').textContent = "×";
 	document.getElementById('menuBg').style.animation = "menuOnBg 1s ease 0s 1 normal both";
 	document.getElementById('menuBox').style.animation = "menuOnText 1.5s ease 0s 1 normal both";

@@ -67,26 +67,27 @@ body, html {
 	opacity: 95%;
 	overflow: hidden;
 	position: absolute;
-	top: 10vh;
+	top: 5vh;
 	width: 200vmax;
 }
 
 #bioBox {
 	border-top-left-radius: 10%;
 	border-top-right-radius: 10%;
+	bottom: 0;
+	box-shadow: 0 0 10px #101010 inset;
 	font-family: Verdana;
 	font-size: min(24px, 4vmin);
 	font-weight: normal;
-	left: 15vw;
+	left: calc(15vw - 4%);
 	line-height: min(48px, 8vmin);
 	max-height: 70vh;
 	overflow-x: hidden;
 	overflow-y: scroll;
-	padding-left: 2%;
-	padding-right: 2%;
+	padding-left: 4%;
+	padding-right: 4%;
 	position: absolute;
 	touch-action: pan-y;
-	top: 30vh;
 	width: 70vw;
 }
 
@@ -99,6 +100,14 @@ body, html {
 	position: absolute;
 	left: 0vw;
 	width: 100vw;
+}
+
+#closeTrigger {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
 
 #header {
@@ -192,13 +201,13 @@ body, html {
 }
 
 @keyframes bioOffHB {
-	0% {top: calc(18vh - 25px);}
+	0% {top: max(30px, 10vh);}
 	100% {top: min(75vh, 100vh - 70px);}
 }
 
 @keyframes bioOnHB {
 	0% {top: min(75vh, 100vh - 70px);}
-	100% {top: calc(18vh - 25px);}
+	100% {top: max(30px, 10vh);}
 }
 
 @keyframes homeButtonDrop {
