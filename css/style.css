@@ -9,6 +9,10 @@ body, html {
 	user-select: none;
 }
 
+.bold {
+	font-weight: bold;
+}
+
 .button {
 	color: white;
 	font-family: Arial;
@@ -75,12 +79,11 @@ body, html {
 	border-top-left-radius: 10%;
 	border-top-right-radius: 10%;
 	bottom: 0;
-	/*box-shadow: 0 0 10px #101010 inset;*/
-	font-family: Arial;
+	font-family: Candara;
 	font-size: min(24px, 4vmin);
 	font-weight: normal;
 	left: calc(15vw - 4%);
-	line-height: min(48px, 8vmin);
+	line-height: 2;
 	max-height: 70vh;
 	overflow-x: hidden;
 	overflow-y: scroll;
