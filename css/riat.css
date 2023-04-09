@@ -1,0 +1,48 @@
+body, html {
+	background-color: black;
+	color: white;
+	font-family: Arial;
+	font-weight: bold;
+	margin: 0;
+	overflow: hidden;
+	touch-action: none;
+	user-select: none;
+}
+
+.embedded {
+	background-color: transparent;
+	border: 0px none transparent;
+	overflow: hidden;
+	padding: 0px;
+}
+
+#bgpic {
+	bottom: 0;
+	height: 100vh;
+	left: 0;
+	opacity: 100%;
+	position: fixed;
+	width: 50vh;
+}
+
+#container {
+	align-content: center;
+	height: 90vh;
+	left: 10vw;
+	overflow-y: scroll;
+	position: absolute;
+	text-align: center;
+	top: 10vh;
+	touch-action: pan-y;
+	width: 80vw;
+}
+
+#coverart {
+	height: 199px;
+	width: 199px;
+}
+
+
+::-webkit-scrollbar {width: 0px;}
+::-webkit-scrollbar-thumb {background: transparent;border-radius: 2px;}
+::-webkit-scrollbar-thumb:hover {background: rgba(255, 255, 255, 0.3);}
