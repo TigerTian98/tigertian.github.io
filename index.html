@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>HOME丨TTN</title>
+	<link rel="icon" type="image/x-icon" href="img/icon.ico">
+</head>
+<body onload ="onOpen()">
+
+	<img id="bgpic" src="img/profile.png" onclick="menuClose()">
+
+	<div class="vertical-center" id="header">TIGER TIAN</div>
+
+	<div id="closeTrigger" onclick="closeTabs()"></div>
+
+	<div id="bio">
+		<div id="bioBg"></div>
+		<div id="bioBox">
+			<br>
+			<p>Is it narcissistic to have a personal website, or is it the exact opposite? If you think about it, everything presented there is intended to impress you.</p>
+			<p>I'm Tiger's personal website. It's a pleasure to have you here. "Tiger" is obviously (and fortunately) not his legal name - he was born in the year of the Tiger, and therefore it has been his nickname all his life. 田 (Tian) is his surname - say "T-N" really fast and you'll know how to pronounce it.</p>
+			<p>What Tiger would like you to know about him, before anything else, is how much he loves music. He listens to music intensively and is a devoted record collector and concert-goer. He writes about music he likes and has a blog where he posts his articles (mostly in Chinese, his native language) and designs visuals for them. He creates original music and has composed, produced, and recorded a few mixtapes himself. I could go on and on about his passion for music, but my other sections probably do a better job in showcasing that.</p>
+			<p>Tiger graduated from New York University with a master's degree in Music Business. As he came from a Computer Science / Interactive Media Arts background, a career in the music industry once sounded incredibly unreachable; you can imagine the determination it took for him to finally switch paths. That said, he believes his multi-disciplinary experience is a perfect combination of artistic expression and algorithmic thinking, without which he wouldn't have made projects that embody both. Here you can find some of the best ones, including me (this website).</p>
+			<p>
+				Some essential and interesting facts about Tiger:
+				<br>· He was born and raised in 广东深圳 (Shenzhen, a city in Guangdong province), but he is not Cantonese;
+				<br>· He has never had a drop of alcohol so far in his life, for no particular reason;
+				<br>· He has heard "Into You" by Ariana Grande live twice (so far);
+				<br>· His MBTI personality type is ENFP (and proudly so);
+				<br>· (As you might have noticed) he uses he/him pronouns.
+			</p>
+			<p>I hope you'll find more interesting things about Tiger on this website. Maybe you're visiting from the other side of the planet, or maybe you're sitting next to him at this moment; either way, thank you for taking the time to get here. If you come across something you like, don't hesitate to <a class="inTextLink" target="_blank" href="mailto:tigertian@nyu.edu">let him know</a>!</p>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+		</div>
+		<div id="bioShadow"></div>
+	</div>
+	
+	<a id="homeButton" onclick="bioToggle()">
+		<img id="icon-static" src="img/icon-static.png">
+		<img id="icon" src="img/icon.png">
+	</a>
+
+	<div id="menu">
+		<div class="vertical-center" id="menuBg"></div>
+		<div class="vertical-center" id="menuBox">
+			<br>
+			<!-- <a class="menuText" href="./gallery.html">𝍖 GALLERY</a> -->
+			<a class="menuText" href="./gallery">𝍖 GALLERY</a>
+			<br>
+			<br>
+			<p class="menuText">PROJECTS</p>
+			<a class="button" target="_blank" href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzIyMjM5NTEzNA==&action=getalbum&album_id=1958349354918805505">Album Reviews</a>
+			<br>
+			<a class="button" target="_blank" href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzIyMjM5NTEzNA==&action=getalbum&album_id=1958507433387950081">Annual Music Picks</a>
+			<br>
+			<a class="button" target="_blank" href="https://soundcloud.com/tigertian/albums">Mixtapes</a>
+			<br>
+			<a class="button" target="_blank" href="https://docs.google.com/spreadsheets/d/1ELDhxC21A0v5bf9LonaCfl59ro8tYXfgzlAAK3_wvpE">Personal Music Archive</a>
+			<br>
+			<br>
+			<p class="menuText">COLLECTION</p>
+			<a class="button" target="_blank" href="https://www.instagram.com/vinylsidontopen">Physical Music</a>
+			<br>
+			<br>
+			<p class="menuText">CONTACT</p>
+			<a class="button" target="_blank" href="mailto:tigertian@nyu.edu">tigertian@nyu.edu</a>
+			<br>
+			<a class="button" target="_blank" href="https://www.instagram.com/tigertian98">Instagram</a>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+		</div>
+		<div id="menuBtmShadow"></div>
+	</div>
+
+	<div class="button" id="menuButton" onclick="menuToggle()">≡</div>
+
+</body>
+<script src="js/script.js"></script>
+</html>
