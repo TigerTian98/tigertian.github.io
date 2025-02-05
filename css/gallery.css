@@ -22,6 +22,22 @@ body, html {
 	opacity: 100%;
 }
 
+.description-text {
+	font-weight: normal;
+	font-family: Candara, Optima, serif;
+	text-align: left;
+}
+
+.embedded-scaled {
+	border: none;
+	height: 156.25%;
+	overflow: hidden;
+	transform: scale(0.64);
+	transform-origin: top left;
+	width: 156.25%;
+/*	zoom: 0.5;*/
+}
+
 .frame {
 	width: min(100%, 400px);
 }
